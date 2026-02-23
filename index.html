@@ -37,7 +37,7 @@
         reader.readAsDataURL(file);
       });
 
-      status.innerText = 'Analyzing image with Claude...';
+      status.innerText = 'Analyzing image ';
 
       let parsed;
       try {
@@ -81,7 +81,7 @@
         return;
       }
 
-      status.innerText = 'Done! Opening YouTube...';
+      status.innerText = 'Opening YouTube...';
 
       const youtubeUrl = 'https://www.youtube.com/results?search_query=' + encodeURIComponent(parsed.youtube_query);
 
@@ -94,4 +94,5 @@
     }
   </script>
 </body>
+
 </html>
